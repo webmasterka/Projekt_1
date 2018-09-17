@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>MojeWypieki</title>
+	
+	<meta name="description" content="Blog kulinarny MojeWypieki, na którym znajdziesz inspirujące a zarazem proste przepisy kulinarne ze zdjęciami." />
+	<meta name="keywords" content="ciasta, bezy, owoce, tort, sernik, krem, biszkopt" />
+	
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+	
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+		
+			<div class="logo">
+				<img src="img/cake.png" style="float: left;"/>
+				<span style="color: gray">Moje</span><span style="color: red">wypieki.com</span>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div class="nav">
+			<ol>
+				<li><a href="#">Strona główna</a></li>
+				<li><a href="#">Ciasta</a>
+					<ul>
+						<li><a href="#">Biszkopty</a></li>
+						<li><a href="#">Babki</a></li>
+						<li><a href="#">Ucierane</a></li>
+						<li><a href="#">Kruche</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Bezy</a>
+					<ul>
+						<li><a href="#">Makaroniki</a></li>
+						<li><a href="#">Torty bezowe</a></li>
+						<li><a href="#">Ciasta bezowe</a></li>
+						<li><a href="#">Z bezową pianką</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Serniki</a>
+					<ul>
+						<li><a href="#">Pieczone</a></li>
+						<li><a href="#">Na zimno</a></li>
+						<li><a href="#">Z musem</a></li>
+						<li><a href="#">Z owocami</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Inne</a>
+					<ul>
+						<li><a href="#">Przetwory</a></li>
+						<li><a href="#">Słodkie sosy</a></li>
+						<li><a href="#">Wykwintne</a></li>
+						<li><a href="#">Kremy</a></li>
+					</ul>
+				</li>
+				<li><a href="#">O mnie</a></li>
+			</ol>
+		
+		</div>
+		
+		<div class="content">
+			
+			<p><span style="font-size: 30px">Z miłości do słodkości</span></p>
+			<img src="img/eclair.jpg" alt-="Ekler" title="Ekler"/>
+			<p> Blog kulinarny MojeWypieki, na którym znajdziesz inspirujące a zarazem proste przepisy kulinarne ze zdjęciami. Pod względem treści wyprzedzamy inne blogi kulinarne.Mamy nadzieję, że blog kulinarny cos dobrego stanie się Twoim ulubionym miejscem gdzie przepisy na ciasta i nie tylko są przygotowywane starannie.</p>
+			<img src="img/cake-choco.jpg" alt-="Ciasto czekoladowe" title="Ciasto czekoladowe"/>
+
+		</div>
+		
+		<div class="socials">
+			<div class="socialdivs">
+				<div class="fb">
+					<a href="https://pl-pl.facebook.com/" target=_blank> <i class="icon-facebook"></i> </a>
+				</div>
+				<div class="yt">
+					<a href="https://www.youtube.com/?gl=PL&hl=pl" target=_blank> <i class="icon-youtube"></i> </a>
+				</div>
+				<div class="tw">
+					<a href="https://twitter.com/?lang=pl" target=_blank> <i class="icon-twitter"></i> </a>
+				</div>
+				<div class="gplus">
+					<a href="https://plus.google.com/discover" target=_blank> <i class="icon-gplus"></i> </a>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+		
+		<div class="footer">MojeWypieki.com &copy; 2018 Szablon strony głównej z użyciem menu sticky</div>
+	</div>
+	
+	<script src="jquery-1.11.3.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+	
+</body>
+</html>
