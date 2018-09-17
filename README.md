@@ -15,7 +15,7 @@
 Internet homepage of culinary blog, menu with sticky function, fontello fonts and Subtle Patterns usage.
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/Screenshot.PNG)
 
 ## Technologies
 * HTML5
